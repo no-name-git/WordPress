@@ -12,7 +12,7 @@
     <div class="container">
       <div class="header__top">
       <?php the_custom_logo(); ?>
-        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+        <a class="phone" href="<?php the_field('phone_number'); ?>"><?php the_field('phone'); ?></a>
       </div>
       <div class="header__content">
         <h1 data-wow-delay=".5s" class="header__title wow animate__fadeInLeft">
@@ -26,22 +26,22 @@
         </p>
         <a class="button" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
         <div class="social header__social">
-          <a class="social__link" href="#">
+          <a class="social__link" href="<?php the_field('link_instagram'); ?>">
             <svg class="test" width="26" height="26">
               <use xlink:href="<?php bloginfo('template_url'); ?>/assets/images/icon/sprite.svg#instagram"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="<?php the_field('link_telegram'); ?>">
             <svg width="25" height="19">
               <use xlink:href="<?php bloginfo('template_url'); ?>/assets/images/icon/sprite.svg#telegram"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="<?php the_field('link_whatsapp'); ?>">
             <svg width="26" height="26">
               <use xlink:href="<?php bloginfo('template_url'); ?>/assets/images/icon/sprite.svg#whatsapp"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="<?php the_field('link_fucebook'); ?>">
             <svg width="14" height="25">
               <use xlink:href="<?php bloginfo('template_url'); ?>/assets/images/icon/sprite.svg#facebook"></use>
             </svg>

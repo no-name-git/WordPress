@@ -171,9 +171,7 @@ TempLate Name: home
             </li>
             <li class="contacts__item">
               <p class="contacts__item-title">Телефон</p>
-              <p class="contacts__item-text">
-                +38 (050) 555 66 77
-              </p>
+              <a class="contacts__item-text" href="<?php the_field('phone_number'); ?>"><?php the_field('phone'); ?></a>
             </li>
           </ul>
         </div>
